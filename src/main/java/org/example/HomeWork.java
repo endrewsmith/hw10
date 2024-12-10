@@ -1,6 +1,5 @@
 package org.example;
 
-
 import lombok.SneakyThrows;
 
 import java.io.*;
