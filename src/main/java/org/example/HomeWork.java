@@ -14,6 +14,14 @@ public class HomeWork {
      */
     @SneakyThrows
     public void championship(InputStream in, OutputStream out) {
+
+        // На всякий случай проверим входные параметры
+        if (in == null) {
+            throw new IllegalArgumentException("Входящий поток не может быть null");
+        }
+        if (out == null) {
+            throw new IllegalArgumentException("Выходящий поток не может быть null");
+        }
         // Создадим красно-черное дерево рыцарей(из вебинара)
         RedBlackTree<Integer> knights = new RedBlackTree<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
